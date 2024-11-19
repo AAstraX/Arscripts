@@ -6,19 +6,19 @@
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoony font */
 }
 
-/* Body with cartoony background */
+/* Body with cartoony blue background */
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #FFDDC1, #FFABAB, #FFC3A0);
+    background: linear-gradient(135deg, rgba(135, 206, 250, 0.9), rgba(173, 216, 230, 0.8), rgba(70, 130, 180, 0.7));
     background-size: 200% 200%;
-    animation: backgroundMove 5s infinite alternate;
+    animation: backgroundGlow 6s infinite alternate;
 }
 
 /* Background animation */
-@keyframes backgroundMove {
+@keyframes backgroundGlow {
     from {
         background-position: 0 0;
     }
@@ -27,13 +27,14 @@ body {
     }
 }
 
-/* Transparent text */
+/* Transparent text with glow */
 .center-text {
     font-size: 6rem;
     text-align: center;
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
     font-weight: bold;
-    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
 }
 
 /* Redirect logos container */
@@ -49,11 +50,12 @@ body {
     height: 80px;
     border-radius: 50%;
     transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .redirect-logo img:hover {
     transform: scale(1.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 /* Discord link in the top-right */
@@ -70,8 +72,10 @@ body {
 .discord-link img {
     width: 40px;
     height: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .discord-link:hover {
     opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
