@@ -1,23 +1,16 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoony font */
-}
-
-/* Body with cartoony blue background */
+/* Body Background */
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, rgba(135, 206, 250, 0.9), rgba(173, 216, 230, 0.8), rgba(70, 130, 180, 0.7));
-    background-size: 200% 200%;
     animation: backgroundGlow 6s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Background animation */
+/* Background Glow Animation */
 @keyframes backgroundGlow {
     from {
         background-position: 0 0;
@@ -27,58 +20,69 @@ body {
     }
 }
 
-/* Transparent text with glow */
+/* Centered Text Title */
 .center-text {
-    font-size: 6rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    font-size: 3rem;
     font-weight: bold;
-    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
 }
 
-/* Redirect logos container */
+/* Container for Text Boxes Vertically */
 .redirect-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;  /* Arrange the boxes vertically */
+    align-items: center;     /* Center the text boxes horizontally */
+    gap: 40px;               /* Increased gap to make the boxes farther apart */
     margin-top: 20px;
 }
 
-.redirect-logo img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+/* Individual Text Box Styles */
+.redirect-box {
+    display: inline-block;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Glow effect */
+    transition: all 0.3s ease;
 }
 
-.redirect-logo img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+/* Hover Effect for Text Boxes (Move Below Each Other) */
+.redirect-box:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter background */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Enhanced glow */
+    transform: translateY(10px) scale(1.05); /* Move the box downwards and scale up slightly */
 }
 
-/* Discord link in the top-right */
+/* Discord Link Styles */
 .discord-link {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
 }
 
+/* Discord Logo Image */
 .discord-link img {
-    width: 40px; /* Size of the logo */
-    height: 40px;
-    background: transparent; /* Ensure no background */
+    width: 40px;  /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background: transparent; /* Ensure no background color */
     border-radius: 50%; /* Optional: Makes the logo circular */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
-    transition: opacity 0.3s, box-shadow 0.3s;
+    border: none;  /* Remove any borders */
+    box-shadow: none; /* Remove any shadow */
+    opacity: 1; /* Ensure full opacity */
+    transition: opacity 0.3s, transform 0.3s;
 }
 
-.discord-link:hover {
-    opacity: 1;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+/* Optional: Hover Effect */
+.discord-link img:hover {
+    opacity: 0.8; /* Optional: Slightly fade when hovered */
+    transform: scale(1.1); /* Optional: Slight zoom effect */
 }
