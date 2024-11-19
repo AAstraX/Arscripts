@@ -70,21 +70,15 @@ body {
 }
 
 .discord-link img {
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.discord-link:hover {
-    opacity: 1;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-}
-
-.discord-link img {
     width: 40px; /* Size of the logo */
     height: 40px;
     background: transparent; /* Ensure no background */
     border-radius: 50%; /* Optional: Makes the logo circular */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
     transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+.discord-link:hover {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
