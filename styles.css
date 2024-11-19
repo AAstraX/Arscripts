@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoony font */
+}
+
+/* Body with cartoony background */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFDDC1, #FFABAB, #FFC3A0);
+    background-size: 200% 200%;
+    animation: backgroundMove 5s infinite alternate;
+}
+
+/* Background animation */
+@keyframes backgroundMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Transparent text */
+.center-text {
+    font-size: 6rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Redirect logos container */
+.redirect-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redirect-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.redirect-logo img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Discord link in the top-right */
+.discord-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.discord-link img {
+    width: 40px;
+    height: 40px;
+}
+
+.discord-link:hover {
+    opacity: 1;
+}
