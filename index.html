@@ -105,6 +105,29 @@
             transform: scale(1.1); /* Optional: Slight zoom effect */
         }
     </style>
+    <script>
+        // Detect F12, Ctrl+U, and other dev tools shortcuts
+        document.addEventListener('keydown', function(event) {
+            // Redirect if F12 is pressed (Developer Tools)
+            if (event.key === "F12" || (event.ctrlKey && event.key === "u")) {
+                window.location.href = "https://www.google.com"; 
+                event.preventDefault();
+            }
+
+            // Redirect if Ctrl+Shift+I is pressed (Developer Tools)
+            if (event.ctrlKey && event.shiftKey && event.key === "I") {
+                window.location.href = "https://www.google.com"; 
+                event.preventDefault();
+            }
+        });
+
+        // Block scraping tools like curl and wget 
+        var userAgent = navigator.userAgent.toLowerCase();
+        if (userAgent.includes('curl') || userAgent.includes('wget')) {
+            alert("Access Denied: Scraping tools detected.");
+            window.location.href = "https://www.google.com"; // Redirect to another site
+        }
+    </script>
 </head>
 <body>
     <!-- Background with transparent text -->
