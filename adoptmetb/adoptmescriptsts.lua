@@ -4,7 +4,7 @@ local Notify = AkaliNotif.Notify;
 wait(1);
 
 Notify({
-Description = "ADOPT ME | V0.1, SCRIPT IS LOADING IN PLEASE WAIT....";
+Description = "ADOPT ME | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT....";
 Title = "ADOPT ME | V0.1 ";
 Duration = 3;
 });
