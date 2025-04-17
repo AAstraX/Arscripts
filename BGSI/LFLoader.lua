@@ -1,4 +1,4 @@
-local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/AAstraX/ARCUILIB/refs/heads/Scripts/Notify"))();
+local AkaliNotif = loadstring(game:HttpGet("https://arscripts.space/nsNotify/Notifyns.lua"))();
 local Notify = AkaliNotif.Notify;
 
 wait(1);
