@@ -25,7 +25,6 @@ end
 task.spawn(Loader)
 
 
-ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...", 300) -- 5-minute countdown
+ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...", 300) 
 
--- Second notification with countdown (No extra wait needed)
 ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT....", 60)
