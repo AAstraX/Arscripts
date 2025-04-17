@@ -1,7 +1,7 @@
 local AkaliNotif = loadstring(game:HttpGet("https://arscripts.space/nsNotify/Notifyns.lua"))();
 local Notify = AkaliNotif.Notify;
 
-wait(1)
+wait(1);
 
 local function ShowCountdown(title, baseMessage, duration)
     for i = duration, 1, -1 do
