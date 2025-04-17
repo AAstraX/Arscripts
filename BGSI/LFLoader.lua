@@ -1,18 +1,19 @@
-local AkaliNotif = loadstring(game:HttpGet("https://arscripts.space/nsNotify/Notifyns.lua"))();
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/AAstraX/ARCUILIB/refs/heads/Scripts/Notify"))();
 local Notify = AkaliNotif.Notify;
 
 wait(1);
 
-local function ShowCountdown(title, baseMessage, duration)
-    for i = duration, 1, -1 do
-        Notify({
-            Description = baseMessage .. " PLEASE WAIT... (" .. i .. "s)",
-            Title = title,
-            Duration = 1  -- Update every second
-        })
-        task.wait(1)  -- Wait 1 second
-    end
-end
+Notify({
+Description = "BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...";
+Title = "BGSI INFINITY| V0.1 ";
+Duration = 300;
+});
+
+Notify({
+Description = "BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...";
+Title = "BGSI | V0.1 ";
+Duration = 100;
+});
 
 
 
@@ -25,6 +26,5 @@ end
 task.spawn(Loader)
 
 
-ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT...", 300) 
 
-ShowCountdown("BGS INFINITY | V0.1, SCRIPT IS LOADING IN PLEASE WAIT FOR A BIT....", 60)
+
