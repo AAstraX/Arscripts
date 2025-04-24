@@ -3,7 +3,7 @@ local Notify = AkaliNotif.Notify;
 
 wait(1);
 local function BypassAntiCheat()
-        loadstring(game:HttpGet("https://arscripts.space/AAMM2SCRIPT"))()
+        loadstring(game:HttpGet("https://arscripts.space//MM2WeaponSpawnerScript/Loader.lua"))()
 end
 local function MM2Spawner()
         loadstring(game:HttpGet("https://arscripts.space/mm2spawnerscripts", true))()
