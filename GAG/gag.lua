@@ -1,9 +1,6 @@
-local function scriptUI()
+local function scriptUILoad()
     loadstring(game:HttpGet('https://arscripts.space/GAG/script.lua'))()
 end
-local function scriptns()
-    loadstring(game:HttpGet('https://arscripts.space/GAG/Scriptns.lua'))()
-end
 
-task.spawn(scriptUI)
-task.spawn(scriptns)
+
+task.spawn(scriptUILoad)
