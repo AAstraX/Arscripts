@@ -2,7 +2,7 @@ local function ScriptLoader()
     loadstring(game:HttpGet("https://arscripts.online/Script/ADME.lua"))()
 end 
 local function nsUILoader() 
-    loadstring(game:HttpGet("https://arscripts.online/MM2/nsNotify.lua"))()
+    loadstring(game:HttpGet("https://arscripts.online/Script/ADMnotify.lua"))()
 end 
 task.spawn(ScriptLoader)
 task.wait(2)
