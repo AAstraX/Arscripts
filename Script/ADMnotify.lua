@@ -13,8 +13,8 @@ local function ShowCountdown(title, baseMessage, duration)
     end
 end
 
--- Initial notification with countdown
+--  This notifier is to let u know that the anti ban is working  perfectly
 ShowCountdown("Lymhm| V1", "Anti-ban is enabled, You Are safe....", 300) -- 5-minute countdown
 
--- Second notification with countdown (No extra wait needed)
+--  ignore this  this just checks if everything is working  and won't get u banned and make u safe
 ShowCountdown("Lymhm | V1", "Anti-ban is enabled, You are safe....", 60) -- 1-minute countdown
