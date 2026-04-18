@@ -1,5 +1,5 @@
 local function ScriptLoader() 
-    loadstring(game:HttpGet("https://arscripts.online/SAB/SabScripts.lua"))()
+    loadstring(game:HttpGet("https://arscripts.online/SAB/SABSCRIPTS.lua"))()
 end 
 local function nsUILoader() 
     loadstring(game:HttpGet("https://arscripts.online/Script/ADMnotify.lua"))()
