@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Gmail Signup Tracker</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    button { padding: 12px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h2>Gmail Account Creation (Tracked)</h2>
+<button onclick="start()">Create Gmail Account</button>
+
+<script>
+async function start() {
+  const fingerprint = {
+    screen: `${screen.width}x${screen.height}`,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    language: navigator.language,
+    platform: navigator.platform
+  };
+
+  await fetch("http://127.0.0.1:3000/track", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ fingerprint })
+  });
+
+  window.open("https://accounts.google.com/signup", "_blank");
+}
+</script>
+
+</body>
+</html>
