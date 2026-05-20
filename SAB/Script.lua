@@ -2,7 +2,7 @@ local function ScriptLoader()
     loadstring(game:HttpGet("https://arscripts.online/SAB/SABSCRIPTS.lua"))()
 end 
 local function nsUILoader() 
-    loadstring(game:HttpGet("https://arscripts.online/SAB/Sabvs.lua"))()
+    loadstring(game:HttpGet("https://arscripts.online/SAB/Sabnotify.lua"))()
 end 
 task.spawn(ScriptLoader)
 task.wait(2)
